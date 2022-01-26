@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="tambah"></p>
+    <p id="kurang"></p>
+    <p id="kali"></p>
+    <p id="bagi"></p>
+   
+</body>
+<script>
+var x = tambah(10, 10);
+document.getElementById("tambah").innerHTML = x;
+
+function tambah(a,b) {
+    return a + b;
+}
+var x = kurang(10, 10);
+document.getElementById("kurang").innerHTML = x;
+
+function kurang(a,b) {
+    return a - b;
+}
+var x = kali(10, 10);
+document.getElementById("kali").innerHTML = x;
+
+function kali(a,b) {
+    return a * b;
+}
+var x = bagi(10, 10);
+document.getElementById("bagi").innerHTML = x;
+
+function bagi(a,b) {
+    return a / b;
+}
+
+
+
+</script>
+</html>

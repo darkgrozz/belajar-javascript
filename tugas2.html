@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>If Else</title>
+</head>
+
+<body style="text-align: center;">
+    <h3>1. Buatlah logika Menggunakan if else :</h3>
+    <div class="row mb-3" style="margin-left: 200px; margin-right: 200px;">
+        <input type="number" id="nilai" class="form-control">
+        <input style="width: 100px;" class="tombol" type="button" onclick="nilai()" value="  GASS  ">
+    </div>
+    <p id="demo"></p>
+    <script>
+        function nilai() {
+            let greeting;
+            let nilai = document.getElementById("nilai").value;
+            if (nilai > 90) {
+                greeting = "Grade = A";
+            } else if (nilai > 80) {
+                greeting = "Grade = B+";
+            } else if (nilai > 70) {
+                greeting = "Grade = B";
+            } else {
+                greeting = "F"
+            }
+            document.getElementById("demo").innerHTML = greeting;
+        }
+    </script>
+</body>
+
+</html>
